@@ -1,0 +1,101 @@
+Raio-X da Renúncia Fiscal Federal 2025 - pipeline da Sprint 1 | início 08/11/2026 09:14:35
+Python 3.14.4 | pasta D:\000-xpe\Projeto Final\raio-x-renuncia-fiscal\raio-x-renuncia-fiscal
+duckdb 2.0.0 | pandas 3.0.6
+
+==============================================================================
+[08/11/2026 09:14:36] R01 - Coleta e registro das bases
+==============================================================================
+DIRBI 2025: D:\000-xpe\Projeto Final\Novos datasets\download\2025\renuncia-por-regime-2025\2025.csv
+Calculando SHA-256 (pode levar alguns segundos)...
+  tamanho: 614.9 MB | sha256: f6ca7323edcbb339...
+  [já existia] cnae_subclasses.json                   3,648,251 bytes
+  [já existia] municipios_ibge.json                   2,372,050 bytes
+  [já existia] populacao_uf_sidra6579.json            7,745 bytes
+  [já existia] populacao_municipio_sidra6579.json     1,508,656 bytes
+  [já existia] pib_uf_sidra5938.json                  8,086 bytes
+  [ baixado  ] dgt_2025.pdf                           3,542,599 bytes
+  [ baixado  ] dgt_2025_quadros.xlsx                  473,020 bytes
+  [versionado] tabela_beneficios_dirbi.csv            90 linhas
+  [versionado] lc224_classificacao_preliminar.csv     90 linhas
+
+Resumo R01: 10/10 bases registradas
+
+==============================================================================
+[08/11/2026 09:14:39] R02 - Perfilamento da qualidade dos dados
+==============================================================================
+Colunas originais (10): ['CNPJ', 'Nome', 'Município', 'UF', 'Cnae', 'Mês', 'Ano', 'Código_IN', 'Tributo', 'Valor']
+Leitura concluída: 6.270.697 linhas em 6.0 s
+Linhas: 6.270.697 | CNPJs: 88.959 | raízes: 88.944 | códigos: 95
+Total declarado: R$ 366.495.982.035,69 (R$ 366,5 bi)
+Vazios: 0 | não numéricos: 0 | negativos: 0 | zerados: 0
+Duplicados na chave (cnpj, ano, mês, código, tributo): 0 | linhas idênticas: 0
+CNPJ mascarado pela RFB: 222 | fora do padrão: 0 | não matriz: 21.788
+CNAE com 7 dígitos: 100,00% | UFs: 27 (inválidas: [])
+Meses: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'] | anos: ['2025'] | códigos sem nome na tabela: [92, 105, 115, 116, 117, 118, 128]
+Outliers (log10: > Q3 + 3·IIQ = R$ 314.653.745,92): 23 linhas, R$ 19,4 bi
+Relatório gravado em docs/relatorio_qualidade.md
+
+==============================================================================
+[08/11/2026 09:15:18] R03 - Tratamento e integração
+==============================================================================
+Referências carregadas: {'beneficios': 90, 'cnae': 1332, 'municipios': 5571, 'uf_pop': 27, 'uf_pib': 27}
+Linhas: bruto 6.270.697 = tratada 6.270.697
+Total tratado: R$ 366.495.982.035,69 | perfil de 30/10: R$ 366,5 bi
+Reconciliação mês × tributo: 132 células, maior diferença absoluta = R$ 0,00
+  Junção Tabela de benefícios (código)              valor  100,00% | linhas  100,00%  [OK]
+  Junção CNAE 2.3 (subclasse, 7 dígitos)            valor   99,91% | linhas   99,92%  [OK]
+  Junção Municípios IBGE (nome normalizado + UF)    valor   99,75% | linhas   99,60%  [OK]
+  Junção UF (população e PIB)                       valor  100,00% | linhas  100,00%  [OK]
+CNPJ mascarado: 222 linhas, R$ 4.145.472.971,68 (rotulados 'CNPJ não divulgado')
+Relatório gravado em docs/relatorio_integracao.md
+
+==============================================================================
+[08/11/2026 09:15:52] R04 - Dicionário de dados
+==============================================================================
+26 campos documentados (26 com descrição completa). Sem descrição: nenhum
+Dicionário gravado em docs/dicionario_dados.md
+
+==============================================================================
+[08/11/2026 09:15:55] R05 - Agregados do painel e R08 - Top 20 benefícios
+==============================================================================
+Total: R$ 366.495.982.035,69 | empresas (raízes): 88.944 | benefícios: 95 | tributos: 11 | registros: 6.270.697
+Conferência das tabelas do painel (soma = total da base):
+  agg_tributo                             R$ 366.495.982.035,69  diferença R$ 0,00
+  agg_mes_tributo                         R$ 366.495.982.035,69  diferença R$ 0,00
+  agg_beneficio                           R$ 366.495.982.035,69  diferença R$ 0,00
+  agg_uf                                  R$ 366.495.982.035,69  diferença R$ 0,00
+  agg_cnae_divisao                        R$ 366.495.982.035,69  diferença R$ 0,00
+  agg_empresa + CNPJ não divulgado        R$ 366.495.982.035,69  diferença R$ 0,00
+
+Top 20 benefícios (insumo do R08):
+   1. [ 79] Carnes                                                     R$ 36,5 bi acum.  10,0%  Protegido (a confirmar)
+   2. [ 22] Adubos e fertilizantes                                     R$ 34,0 bi acum.  19,2%  Sujeito (a confirmar)
+   3. [ 20] Sudam/Sudene – redução de 75% do IRPJ                      R$ 27,3 bi acum.  26,7%  A confirmar (a confirmar)
+   4. [ 54] ZFM – produtos industrializados para comercialização no    R$ 26,1 bi acum.  33,8%  Protegido (inequívoca)
+   5. [ 23] Defensivos agropecuários                                   R$ 22,5 bi acum.  39,9%  Sujeito (a confirmar)
+   6. [  7] Desoneração da folha de pagamentos (CPRB)                  R$ 15,0 bi acum.  44,0%  Protegido (inequívoca)
+   7. [ 81] Café – redução de alíquota                                 R$ 13,1 bi acum.  47,6%  Protegido (a confirmar)
+   8. [ 37] Inovação tecnológica – adicional de 60% a 80%              R$ 11,3 bi acum.  50,7%  Sujeito (a confirmar)
+   9. [  6] Produtos farmacêuticos – CMED (crédito presumido)          R$ 10,5 bi acum.  53,6%  Sujeito (a confirmar)
+  10. [ 57] ZFM – entrada de produtos estrangeiros                     R$ 10,3 bi acum.  56,4%  Protegido (inequívoca)
+  11. [ 73] Queijos                                                     R$ 7,9 bi acum.  58,5%  Protegido (a confirmar)
+  12. [ 29] Subvenção para investimentos – crédito fiscal               R$ 7,7 bi acum.  60,6%  A confirmar (a confirmar)
+  13. [ 28] ZFM – importação de matérias-primas                         R$ 7,6 bi acum.  62,7%  Protegido (inequívoca)
+  14. [ 16] Produtos agropecuários gerais                               R$ 7,6 bi acum.  64,8%  Sujeito (a confirmar)
+  15. [ 63] Sementes e mudas                                            R$ 7,1 bi acum.  66,7%  Sujeito (a confirmar)
+  16. [ 83] Óleos vegetais                                              R$ 7,0 bi acum.  68,6%  Protegido (a confirmar)
+  17. [  3] Reidi                                                       R$ 6,5 bi acum.  70,4%  A confirmar (a confirmar)
+  18. [ 30] Inovação tecnológica – dispêndios como despesa operacio     R$ 5,5 bi acum.  71,9%  Sujeito (a confirmar)
+  19. [ 14] Soja                                                        R$ 5,3 bi acum.  73,4%  Sujeito (a confirmar)
+  20. [ 70] Leite fluido pasteurizado ou industrializado                R$ 5,2 bi acum.  74,8%  Protegido (a confirmar)
+
+Arquivos do painel em app/dados/: 8 arquivos, 1.77 MB no total
+
+==============================================================================
+RESUMO DA EXECUÇÃO
+  R01 coleta               3.2 s
+  R02 perfil              39.1 s
+  R03 tratamento          34.6 s
+  R04 dicionário           2.3 s
+  R05/R08 agregados        5.5 s
+  TOTAL                   85.5 s | fim 08/11/2026 09:16:00

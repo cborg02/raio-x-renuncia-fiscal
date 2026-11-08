@@ -1,0 +1,91 @@
+codigo,beneficio,classificacao_lc224,fundamento,grau_de_certeza
+1,Perse (redução a 0%),Encerrado,Perse encerrado a partir de abr/2025 (teto de custo fiscal da Lei nº 14.859/2024 atingido); fora do alcance do corte de 2026,inequívoca
+2,Recap,Sujeito,Sem exceção aplicável identificada,a confirmar
+3,Reidi,A confirmar,Pode se enquadrar como condição onerosa (projeto aprovado pelo Poder Executivo até 31/12/2025),a confirmar
+4,Reporto,Sujeito,Sem exceção aplicável identificada,a confirmar
+5,Óleo bunker,Sujeito,Sem exceção aplicável identificada,a confirmar
+6,Produtos farmacêuticos – CMED (crédito presumido),Sujeito,Sem exceção aplicável identificada,a confirmar
+7,Desoneração da folha de pagamentos (CPRB),Protegido,Exceção expressa: CPRB (arts. 7º a 10 da Lei nº 12.546/2011),inequívoca
+8,Padis (semicondutores),Protegido,Exceção expressa: política industrial de TIC e semicondutores (Padis),inequívoca
+9,"Carne bovina, ovina e caprina – exportação",Sujeito,Sem exceção aplicável identificada,a confirmar
+10,"Carne bovina, ovina e caprina – industrialização",Sujeito,Sem exceção aplicável identificada,a confirmar
+11,Café não torrado – crédito presumido,Sujeito,Sem exceção aplicável identificada,a confirmar
+12,Café torrado e seus extratos – crédito presumido,Sujeito,Sem exceção aplicável identificada,a confirmar
+13,Laranja,Sujeito,Sem exceção aplicável identificada,a confirmar
+14,Soja,Sujeito,Sem exceção aplicável identificada,a confirmar
+15,"Porcos, aves e cereais",Sujeito,Sem exceção aplicável identificada,a confirmar
+16,Produtos agropecuários gerais,Sujeito,Sem exceção aplicável identificada,a confirmar
+17,REIQ – redução de alíquotas,Sujeito,Sem exceção aplicável identificada,a confirmar
+18,REIQ – créditos,Sujeito,Sem exceção aplicável identificada,a confirmar
+19,REIQ – créditos adicionais,Sujeito,Sem exceção aplicável identificada,a confirmar
+20,Sudam/Sudene – redução de 75% do IRPJ,A confirmar,Benefício por prazo determinado com laudo/projeto aprovado (Sudam/Sudene): verificar enquadramento como condição onerosa,a confirmar
+21,Sudam/Sudene – reinvestimento de 30%,A confirmar,Idem item 20,a confirmar
+22,Adubos e fertilizantes,Sujeito,Sem exceção aplicável identificada,a confirmar
+23,Defensivos agropecuários,Sujeito,Sem exceção aplicável identificada,a confirmar
+24,Aeronaves,Sujeito,Sem exceção aplicável identificada,a confirmar
+25,Aeronaves – partes e peças,Sujeito,Sem exceção aplicável identificada,a confirmar
+26,Medicamentos apresentados em doses,A confirmar,Medicamentos: verificar relação com regimes de saúde da LC 214/2025,a confirmar
+27,Produtos químicos – Capítulo 29,Sujeito,Sem exceção aplicável identificada,a confirmar
+28,ZFM – importação de matérias-primas,Protegido,Exceção expressa: Zona Franca de Manaus e áreas de livre comércio,inequívoca
+29,Subvenção para investimentos – crédito fiscal,A confirmar,Crédito fiscal de subvenção (Lei nº 14.789/2023): verificar condição onerosa,a confirmar
+30,Inovação tecnológica – dispêndios como despesa operacional,Sujeito,Lei do Bem: sem exceção expressa,a confirmar
+31,Inovação tecnológica – redução de 50% do IPI,Sujeito,Lei do Bem: sem exceção expressa,a confirmar
+32,Inovação tecnológica – depreciação acelerada integral,Sujeito,Lei do Bem: sem exceção expressa,a confirmar
+33,Inovação tecnológica – amortização acelerada de intangíveis,Sujeito,Lei do Bem: sem exceção expressa,a confirmar
+34,Inovação tecnológica – universidades e instituições de pesquisa,Sujeito,Lei do Bem: sem exceção expressa,a confirmar
+35,Inovação tecnológica – transferências a ME e EPP,Sujeito,Lei do Bem: sem exceção expressa,a confirmar
+36,Inovação tecnológica – transferências a inventor independente,Sujeito,Lei do Bem: sem exceção expressa,a confirmar
+37,Inovação tecnológica – adicional de 60% a 80%,Sujeito,Lei do Bem: sem exceção expressa,a confirmar
+38,Inovação tecnológica – patentes e cultivares (adicional de 20%),Sujeito,Lei do Bem: sem exceção expressa,a confirmar
+39,Inovação tecnológica – ICT e entidades científicas privadas,Sujeito,Lei do Bem: sem exceção expressa,a confirmar
+40,Inovação tecnológica – depreciação vinculada a projetos,Sujeito,Lei do Bem: sem exceção expressa,a confirmar
+41,Inovação tecnológica – amortização vinculada a projetos,Sujeito,Lei do Bem: sem exceção expressa,a confirmar
+42,Inovação tecnológica – subvenções governamentais da União,Sujeito,Lei do Bem: sem exceção expressa,a confirmar
+43,Inovação tecnológica – atividades de informática e automação,Protegido,Exceção expressa: política industrial de TIC (Lei de Informática),a confirmar
+44,ZFM – importação de bens para elaboração de matérias-primas,Protegido,Exceção expressa: Zona Franca de Manaus e áreas de livre comércio,inequívoca
+45,ZFM – importação de máquinas para o ativo imobilizado,Protegido,Exceção expressa: Zona Franca de Manaus e áreas de livre comércio,inequívoca
+46,"ZFM – alíquotas diferenciadas de 0,65% e 3%",Protegido,Exceção expressa: Zona Franca de Manaus e áreas de livre comércio,inequívoca
+47,"ZFM – alíquotas diferenciadas de 1,3% e 6% (lucro real)",Protegido,Exceção expressa: Zona Franca de Manaus e áreas de livre comércio,inequívoca
+48,"ZFM – alíquotas diferenciadas de 1,3% e 6% (lucro presumido e Simples)",Protegido,Exceção expressa: Zona Franca de Manaus e áreas de livre comércio,inequívoca
+49,ZFM – aquisições no mercado nacional,Protegido,Exceção expressa: Zona Franca de Manaus e áreas de livre comércio,inequívoca
+50,ZFM – venda de matérias-primas e intermediários,Protegido,Exceção expressa: Zona Franca de Manaus e áreas de livre comércio,inequívoca
+51,ZFM – pneumáticos para bicicletas,Protegido,Exceção expressa: Zona Franca de Manaus e áreas de livre comércio,inequívoca
+52,ZFM – setor de tecnologia da informação e comunicação,Protegido,Exceção expressa: Zona Franca de Manaus e áreas de livre comércio,inequívoca
+53,ZFM – produtos industrializados para consumo interno,Protegido,Exceção expressa: Zona Franca de Manaus e áreas de livre comércio,inequívoca
+54,ZFM – produtos industrializados para comercialização no território nacional,Protegido,Exceção expressa: Zona Franca de Manaus e áreas de livre comércio,inequívoca
+55,ZFM – quadriciclos e triciclos,Protegido,Exceção expressa: Zona Franca de Manaus e áreas de livre comércio,inequívoca
+56,ZFM – entrada de produtos nacionais,Protegido,Exceção expressa: Zona Franca de Manaus e áreas de livre comércio,inequívoca
+57,ZFM – entrada de produtos estrangeiros,Protegido,Exceção expressa: Zona Franca de Manaus e áreas de livre comércio,inequívoca
+58,"ZFM – coeficiente de redução, regra geral",Protegido,Exceção expressa: Zona Franca de Manaus e áreas de livre comércio,inequívoca
+59,ZFM – coeficiente de redução de 88% (projetos aprovados),Protegido,Exceção expressa: Zona Franca de Manaus e áreas de livre comércio,inequívoca
+60,ZFM – coeficiente de redução para veículos terrestres (+5 p.p.),Protegido,Exceção expressa: Zona Franca de Manaus e áreas de livre comércio,inequívoca
+61,Transporte aéreo de passageiros,Sujeito,Sem exceção aplicável identificada,a confirmar
+62,Transporte rodoviário de passageiros,Sujeito,Sem exceção aplicável identificada,a confirmar
+63,Sementes e mudas,Sujeito,Sem exceção aplicável identificada,a confirmar
+64,Corretivo de solo,Sujeito,Sem exceção aplicável identificada,a confirmar
+65,"Feijões, arroz, farinhas e sêmolas",Protegido,"Exceção: alíquota zero da Cesta Básica Nacional (LC 214/2025, Anexo I) — conferir se todos os NCMs do item estão no Anexo I",a confirmar
+66,Inoculantes agrícolas,Sujeito,Sem exceção aplicável identificada,a confirmar
+67,Vacinas veterinárias,Sujeito,Sem exceção aplicável identificada,a confirmar
+68,Farinhas à base de milho,Protegido,"Exceção: alíquota zero da Cesta Básica Nacional (LC 214/2025, Anexo I) — conferir se todos os NCMs do item estão no Anexo I",a confirmar
+69,Pintos de um dia,Sujeito,Sem exceção aplicável identificada,a confirmar
+70,Leite fluido pasteurizado ou industrializado,Protegido,"Exceção: alíquota zero da Cesta Básica Nacional (LC 214/2025, Anexo I) — conferir se todos os NCMs do item estão no Anexo I",a confirmar
+71,Leite em pó integral ou desnatado,Protegido,"Exceção: alíquota zero da Cesta Básica Nacional (LC 214/2025, Anexo I) — conferir se todos os NCMs do item estão no Anexo I",a confirmar
+72,Leite em pó semidesnatado,Protegido,"Exceção: alíquota zero da Cesta Básica Nacional (LC 214/2025, Anexo I) — conferir se todos os NCMs do item estão no Anexo I",a confirmar
+73,Queijos,Protegido,"Exceção: alíquota zero da Cesta Básica Nacional (LC 214/2025, Anexo I) — conferir se todos os NCMs do item estão no Anexo I",a confirmar
+74,Soro de leite,A confirmar,Verificar se o produto está no Anexo I da LC 214/2025 (Cesta Básica Nacional),a confirmar
+75,Farinha de trigo,Protegido,"Exceção: alíquota zero da Cesta Básica Nacional (LC 214/2025, Anexo I) — conferir se todos os NCMs do item estão no Anexo I",a confirmar
+76,Trigo,A confirmar,Verificar se o produto está no Anexo I da LC 214/2025 (Cesta Básica Nacional),a confirmar
+77,Pré-misturas para pão,A confirmar,Verificar se o produto está no Anexo I da LC 214/2025 (Cesta Básica Nacional),a confirmar
+78,Massas alimentícias,Protegido,"Exceção: alíquota zero da Cesta Básica Nacional (LC 214/2025, Anexo I) — conferir se todos os NCMs do item estão no Anexo I",a confirmar
+79,Carnes,Protegido,"Exceção: alíquota zero da Cesta Básica Nacional (LC 214/2025, Anexo I) — conferir se todos os NCMs do item estão no Anexo I",a confirmar
+80,Peixes,Protegido,"Exceção: alíquota zero da Cesta Básica Nacional (LC 214/2025, Anexo I) — conferir se todos os NCMs do item estão no Anexo I",a confirmar
+81,Café – redução de alíquota,Protegido,"Exceção: alíquota zero da Cesta Básica Nacional (LC 214/2025, Anexo I) — conferir se todos os NCMs do item estão no Anexo I",a confirmar
+82,Açúcar,Protegido,"Exceção: alíquota zero da Cesta Básica Nacional (LC 214/2025, Anexo I) — conferir se todos os NCMs do item estão no Anexo I",a confirmar
+83,Óleos vegetais,Protegido,"Exceção: alíquota zero da Cesta Básica Nacional (LC 214/2025, Anexo I) — conferir se todos os NCMs do item estão no Anexo I",a confirmar
+84,Manteiga,Protegido,"Exceção: alíquota zero da Cesta Básica Nacional (LC 214/2025, Anexo I) — conferir se todos os NCMs do item estão no Anexo I",a confirmar
+85,Margarina,Protegido,"Exceção: alíquota zero da Cesta Básica Nacional (LC 214/2025, Anexo I) — conferir se todos os NCMs do item estão no Anexo I",a confirmar
+86,Sabão de toucador,Sujeito,Sem exceção aplicável identificada,a confirmar
+87,Produtos de higiene bucal,Sujeito,Sem exceção aplicável identificada,a confirmar
+88,Papel higiênico,Sujeito,Sem exceção aplicável identificada,a confirmar
+89,Mais Leite Saudável – pessoas jurídicas habilitadas,Sujeito,Sem exceção aplicável identificada,a confirmar
+90,Leite in natura – pessoas jurídicas não habilitadas ao Mais Leite Saudável,Sujeito,Sem exceção aplicável identificada,a confirmar

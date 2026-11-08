@@ -1,0 +1,11 @@
+# Base bruta e base tratada ficam fora do repositório (restrição R9: > 100 MB)
+dados/brutos/*
+!dados/brutos/.gitkeep
+!dados/brutos/manifesto_coleta.csv
+dados/tratados/*
+!dados/tratados/.gitkeep
+*.csv.zip
+entrega_sprint1.zip
+__pycache__/
+.venv/
+.ipynb_checkpoints/
