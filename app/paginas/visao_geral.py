@@ -10,14 +10,15 @@ k = kpis()
 
 st.title("Quanto o governo federal deixou de arrecadar com benefícios fiscais declarados em 2025?")
 st.markdown(
-    f"Em 2025, as empresas declararam à Receita Federal, na **DIRBI**, ter usufruído **{bi(k['total'])}** "
+    f"Em 2025, as **pessoas jurídicas** (exceto MEI e optantes do Simples Nacional) declararam à Receita Federal, "
+    f"na **DIRBI**, ter usufruído **{bi(k['total'])}** "
     "em benefícios fiscais federais, ou seja, tributos que deixaram de ser pagos por força de lei."
 )
 
 c1, c2, c3, c4 = st.columns(4)
 c1.metric("Total renunciado declarado", bi(k["total"]), help="Soma do campo Valor de todos os registros da DIRBI 2025.")
 c2.metric("Empresas beneficiadas", inteiro(k["empresas"]),
-          help="Raízes de CNPJ distintas (8 dígitos). Exclui registros com CNPJ não divulgado pela RFB.")
+          help="Pessoas jurídicas (exceto MEI e Simples Nacional), contadas pela raiz do CNPJ (8 dígitos). Exclui registros com CNPJ não divulgado pela RFB.")
 c3.metric("Benefícios fiscais", inteiro(k["beneficios"]), help="Códigos de benefício (itens do Anexo Único da IN RFB nº 2.198/2024).")
 c4.metric("Tributos envolvidos", inteiro(k["tributos"]), help="Tributos federais desonerados, separando os incidentes na importação.")
 
@@ -27,6 +28,9 @@ st.info(
     "MEI, pessoas físicas nem benefícios fora da lista obrigatória. Veja a página **Entenda a renúncia fiscal**.",
     icon="ℹ️",
 )
+# ajuste de navegação do pré-teste (R07): no celular o menu lateral fica recolhido
+st.page_link("paginas/entenda.py", label="Entenda a renúncia fiscal: glossário e alertas de interpretação",
+             icon=":material/menu_book:")
 
 st.subheader("Em quais tributos está a renúncia?")
 agrupar = st.toggle("Somar os tributos na importação ao tributo correspondente", value=False)
@@ -70,4 +74,5 @@ st.markdown(
     "- **Quem** concentra os benefícios (empresas)  \n- **Onde** estão as sedes beneficiadas (UF, per capita e % do PIB)  \n"
     "- **Em que setores** (CNAE)  \n- **Por quais benefícios**  \n- **O que muda com a LC nº 224/2025** (corte de 10%)"
 )
+st.page_link("paginas/entenda.py", label="Próxima página: Entenda a renúncia fiscal", icon=":material/arrow_forward:")
 rodape()

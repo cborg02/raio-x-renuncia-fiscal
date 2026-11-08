@@ -19,9 +19,10 @@ a1, a2, a3 = st.columns(3)
 with a1:
     st.warning(
         "**1. Cobertura parcial**\n\n"
-        f"A DIRBI soma {bi(k['total'])}, cerca de {numero_br(k['total'] / 1e9 / k['dgt_2025_bi'] * 100, 0)}% dos "
+        "A DIRBI só recebe declarações de **pessoas jurídicas**: não inclui pessoas físicas, MEI nem optantes do Simples Nacional. "
+        f"Ela soma {bi(k['total'])}, cerca de {numero_br(k['total'] / 1e9 / k['dgt_2025_bi'] * 100, 0)}% dos "
         f"R$ {numero_br(k['dgt_2025_bi'])} bi estimados no Demonstrativo de Gastos Tributários (DGT) 2025. "
-        "Ficam de fora o Simples Nacional, o MEI, as pessoas físicas e os benefícios que não constam da lista obrigatória. "
+        "Também ficam de fora os benefícios que não constam da lista obrigatória. "
         "A diferença é de **cobertura**, não erro nem subdeclaração.",
         icon="⚠️",
     )
@@ -36,8 +37,9 @@ with a2:
 with a3:
     st.warning(
         "**3. Mudanças ao longo do tempo**\n\n"
-        "O Perse (setor de eventos) deixou de ser usufruído a partir de abril de 2025. A lista da DIRBI foi ampliada de 88 para "
-        "173 benefícios, mas só para períodos a partir de **janeiro de 2026** (IN RFB nº 2.294/2025): em 2025 a lista é estável. "
+        "Em 2025 valia a lista de 88 benefícios; a ampliação para 173 (IN RFB nº 2.294/2025) vale a partir de **janeiro de 2026**. "
+        "Mesmo assim, 7 códigos da nova lista aparecem em 2025 com valor residual (R$ 2,2 milhões, menos de 0,001% do total). "
+        "O fim do Perse (setor de eventos), a partir de abril de 2025, será analisado na série mensal. "
         "IRPJ e CSLL têm picos em março, junho, setembro e dezembro por causa da apuração trimestral e anual.",
         icon="⚠️",
     )
@@ -47,7 +49,8 @@ st.header("Glossário")
 GLOSSARIO = {
     "Renúncia fiscal / gasto tributário": "Receita que o governo deixa de arrecadar por causa de um tratamento tributário favorecido previsto em lei. "
     "\"Gasto tributário\" é o termo técnico usado pela Receita Federal.",
-    "DIRBI": "Declaração de Incentivos, Renúncias, Benefícios e Imunidades de Natureza Tributária. Desde 2024, empresas que usam "
+    "DIRBI": "Declaração de Incentivos, Renúncias, Benefícios e Imunidades de Natureza Tributária. Desde 2024, pessoas jurídicas "
+    "(exceto MEI e optantes do Simples Nacional) que usam "
     "benefícios da lista oficial informam mensalmente à Receita quanto deixaram de pagar. É a fonte deste painel.",
     "DGT": "Demonstrativo dos Gastos Tributários, publicado com o projeto de lei orçamentária. Traz estimativas para todos os "
     "benefícios, inclusive os que não passam pela DIRBI.",

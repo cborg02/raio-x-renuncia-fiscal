@@ -45,13 +45,14 @@ NOTAS = [
     "**CNPJ mascarado pela RFB:** mantido em todos os totais como \"CNPJ não divulgado\" e excluído de rankings e medidas de concentração.",
     "**Localização pela sede (restrição R5):** UF e município são os do CNPJ declarante. Ex.: Vale e Salobo aparecem no RJ, embora o benefício "
     "Sudam/Sudene (código 20, redução de 75% do IRPJ) esteja ligado a operações nas regiões Norte e Nordeste.",
-    "**Cobertura (restrição R4):** a DIRBI não inclui Simples Nacional, MEI, pessoas físicas nem benefícios fora do Anexo Único. "
+    "**Cobertura (restrição R4):** a DIRBI recebe apenas declarações de pessoas jurídicas; não inclui Simples Nacional, MEI, pessoas físicas nem benefícios fora do Anexo Único. "
     "Por isso o total (~R$ 366,5 bi) corresponde a cerca de 67% do DGT 2025 (R$ 543,6 bi); a razão é diferença de cobertura, não erro.",
     "**Lista de benefícios (restrição R6):** em 2025 vigorou o Anexo Único com 88 itens (IN RFB nº 2.241/2024). A ampliação para 173 itens "
-    "(IN RFB nº 2.294/2025) vale para períodos de apuração a partir de janeiro de 2026 (art. 3º). Logo, não há quebra de lista dentro de 2025.",
+    "(IN RFB nº 2.294/2025) vale para períodos de apuração a partir de janeiro de 2026 (art. 3º). Ainda assim, 7 códigos da nova lista "
+    "(92, 105, 115, 116, 117, 118 e 128) aparecem em 2025, com 303 registros e R$ 2,2 milhões (valor residual).",
     "**Sazonalidade de IRPJ e CSLL:** concentram-se em março, junho, setembro e, sobretudo, dezembro (apuração trimestral/anual); "
     "não é mudança de política. A série mensal (R14) separa ou anota esses tributos.",
-    "**Fim do Perse:** o benefício (código 1) deixa de ser usufruído a partir de abril de 2025.",
+    "**Fim do Perse:** o encerramento do benefício (código 1) foi anunciado a partir de abril de 2025, mas o código aparece nos 12 meses; a evolução mensal é analisada no R14.",
     "**Natureza dos dados (R7):** valores autodeclarados e sujeitos a retificação; a análise refere-se à extração registrada no manifesto.",
     "**Ética (R8):** usufruir de benefício fiscal é legal e não indica irregularidade.",
     "**População e PIB:** último ano disponível no IBGE (ver colunas ano_populacao e ano_pib em ref_uf); a diferença de ano-base é declarada no painel (premissa P5).",

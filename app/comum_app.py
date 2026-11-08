@@ -43,6 +43,7 @@ def configurar(titulo: str) -> None:
              padding: 0.8rem 1rem; border-radius: 6px;}
         div[data-testid="stMetricValue"] {font-size: 1.9rem;}
         .nota {font-size: 0.85rem; color: #5b6770;}
+        @media (max-width: 640px) { h1 {font-size: 1.7rem !important; line-height: 1.25 !important;} }
         </style>""",
         unsafe_allow_html=True,
     )
